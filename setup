@@ -1,0 +1,33 @@
+#!/bin/bash
+# Deriv Trading Bot Setup Script
+
+echo "=========================================="
+echo "   DERIV STEPINDEX TRADING BOT SETUP"
+echo "=========================================="
+
+# Update packages
+echo "📦 Updating Termux packages..."
+pkg update -y && pkg upgrade -y
+
+# Install Python and dependencies
+echo "📦 Installing Python..."
+pkg install python -y
+
+echo "📦 Installing required packages..."
+pip install --upgrade pip
+
+echo "📦 Installing Python dependencies..."
+pip install requests pandas numpy colorama
+
+echo "✅ Setup complete!"
+echo ""
+echo "🚀 To start the bot:"
+echo "   python deriv_bot.py"
+echo ""
+echo "🔑 Get your API token from:"
+echo "   https://app.deriv.com/settings/api-token"
+echo ""
+echo "⚠️  IMPORTANT:"
+echo "   - Start with DEMO account"
+echo "   - Use small stakes ($0.35-$1)"
+echo "   - Set reasonable targets"
