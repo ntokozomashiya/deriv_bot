@@ -18,7 +18,7 @@ A smart mean reversion trading bot for Deriv StepIndex, optimized for Termux on 
 ### Termux Installation:
 ```bash
 # Clone repository
-git clone https://github.com/YOUR_USERNAME/deriv-trading-bot.git
+git clone https://github.com/ntokozomashiya/deriv-trading-bot.git
 cd deriv-trading-bot
 
 # Install dependencies
